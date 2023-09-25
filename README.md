@@ -6,6 +6,7 @@
 
 ### Demo
 Please access the app at : https://bizly-bonnie.netlify.app/
+
 Click on Customize with Bonnie button to test Bonnie for the given build
 
 
