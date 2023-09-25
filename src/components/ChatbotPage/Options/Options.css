@@ -1,0 +1,38 @@
+/* .options-container {
+    display: grid;
+    justify-content: flex-start;
+} */
+.options-container {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-auto-flow: column;
+  }
+.ok-button{
+    margin-top: 3%;
+    border-width: 1px;
+}
+
+  
+  /* Style the label text */
+  .option-label {
+    display: inline-block;
+    margin-left: 10px; /* Add spacing between checkbox and text */
+  }
+  
+  /* Style the checkboxes */
+  .option-checkbox {
+    margin-right: 5px; 
+  }
+
+  .date-button{
+    margin-left: 5%;
+    margin-top: 1% !important;
+  }
+  
+.checkbox-images{
+    width: 95%;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+}

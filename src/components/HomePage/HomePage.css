@@ -1,0 +1,102 @@
+/* styles.css */ 
+/* * {
+    box-sizing: border-box;
+  } */
+  .container{
+    display: flex;
+    height: 100vh;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    /* height: 950px; Should be removed. Only for demonstration */
+    height: 100%;
+  }
+  .column2 {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    /* height: 760px; Should be removed. Only for demonstration */
+    height: 100%;
+  }
+  .column3{
+    float: left;
+    width: 42%;
+    padding: 10px;
+    /* height: 760px; Should be removed. Only for demonstration */
+    height: 100%;
+  }
+  /* Style the image in column 1 to fill the column */
+.column1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+  }
+/* .image-column img{
+  max-width: 100%;
+  height: auto;
+} */
+/* Assuming you have a class "image" for your images */
+.image {
+  max-width: 100%;
+  max-height: 100vh; /* Limit the image height to the viewport height */
+  width: auto;
+  height: auto;
+  object-fit: cover; /* You can use "contain" or "cover" based on your preference */
+}
+
+.title{
+    margin-bottom: 0 !important;
+}
+
+.subtitle{
+    margin-top: 0 !important;
+    color: #8E8E8E;
+}
+.stars .fa-star{
+ padding-left: 2px;
+  padding-right: 2px;
+}
+.stars .startext{
+    padding-left: 2px;
+     padding-right: 2px;
+     color: #8E8E8E;
+   }
+
+.unchecked{
+    color: #8E8E8E;
+}
+  
+hr {
+    margin: 3% 0;
+    /* border: 1px solid #8E8E8E; */
+}
+.buttondiv {
+    display: flex;
+}
+
+.buttondiv button {
+    margin-right: 5% /* Add right margin to create space */
+}
+
+button {
+    padding: 10px 20px;                 
+    border-radius: 5px;
+    /* cursor: 'pointer'; */
+    background-color: #F8FCFD;
+  }
+
+td{
+    padding: 10px;
+    color: #8E8E8E;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
