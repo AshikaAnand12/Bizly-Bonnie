@@ -32,7 +32,6 @@
     float: left;
     width: 20%;
     padding: 10px;
-    /* height: 950px;  */
     background-color: #CCD6D9;
     height: 100%;
 }
@@ -40,7 +39,6 @@
   float: left;
     width: 75%;
     padding: 10px;
-    /* height: 950px;  */
     height: 100%;
 }
 .leftitle{
@@ -65,7 +63,7 @@
 
 .react-chatbot-kit-chat-message-container{
   background-color: #E9EFF0;
-  height: 80vh;
+  height: 85vh;
 }
 .react-chatbot-kit-chat-inner-container{
   height: 90vh;
@@ -97,4 +95,3 @@
 .react-chatbot-kit-user-chat-message-arrow{
   display: none;
 }
-/* DFE9EB */

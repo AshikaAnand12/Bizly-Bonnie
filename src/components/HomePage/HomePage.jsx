@@ -5,12 +5,18 @@ import { faVideo, faBars, faMap } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
 
 const cache = {};
+const maincache = {};
 function importAll(r) {
     r.keys().forEach((key) => (cache[key] = r(key)));
 }
 importAll(require.context('../../../public/img', false, /\.(jpg|jpeg|png|gif|bmp)$/));
 const imageFiles = Object.keys(cache).map((key) => cache[key]);
-console.log(imageFiles,cache);
+
+function importMain(r) {
+    r.keys().forEach((key) => (maincache[key] = r(key)));
+}
+importMain(require.context('../../../public/mainimg', false, /\.(jpg)$/));
+const mainImage = Object.keys(maincache).map((key) => maincache[key]);
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -24,7 +30,7 @@ const HomePage = () => {
     return (
         <div className="container row">
             <div className='column1'>
-                <img src={imageFiles[0]} alt="1"/>
+                <img src={mainImage[0]} alt="1"/>
             </div>
             <div className="image-column column2">
                 {imageFiles.map((image,i) => (
